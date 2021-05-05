@@ -10,11 +10,39 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-
+//1. chair//
+//2. gratitude//
+//3. egg//
 const pigLatin = (word) => {
+  let vowels = ['a', 'e', 'i', 'o', 'u'];
+  let newStr = "";
+  //chair//
+  if (vowels.indexOf(str[0]) = 0 ) {
+    newStr = str + "yay";
+    return newStr;
+  } else {
+    
+  }
+// Case of starting with consonant
+// remove all consonants before first vowel
 
-  // Your code here
+//split word into array
 
+// loop through array
+//at each index check if consonant or vowel. what are vowels 'aeiou'
+    //if consonant <--- SKIP
+    //if vowel && index > 0  take all consonants to up until first vowel 
+    //and 'concat' them to the end of the word 
+    //then also 'concat' them to the end of array
+    //join array back together
+//break out of loop.
+
+
+//Case of starting with vowel // again what is vowel
+//if index 0 === vowel
+  // 'concat' "yay" to the end of word
+
+  //Helpful methods could be "includes", "indexOf", "slice"
 }
 
 // the first function called in the program to get an input from the user
