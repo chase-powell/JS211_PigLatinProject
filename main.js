@@ -10,19 +10,33 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-//1. chair//
-//2. gratitude//
+//1. chair// air + ch + ay
+//2. gratitude// // atitude + gr + ay
 //3. egg//
 const pigLatin = (word) => {
-  let vowels = ['a', 'e', 'i', 'o', 'u'];
-  let newStr = "";
-  //chair//
-  if (vowels.indexOf(str[0]) = 0 ) {
-    newStr = str + "yay";
-    return newStr;
-  } else {
-    
+  word = word.toLowerCase().trim()
+  if(vowels(word.charAt(0))) {
+    return word + 'yay'
+  }else if(vowels(word.charAt(1))) {
+    return word.slice(1) + word.charAt(0) + 'ay'
+  }else if(vowels(word.charAt(2))) {
+    return word.slice(2) + word.slice(0, 2) + 'ay'
   }
+  }
+
+  const vowels = (word) => {
+    if(word.includes('a')
+    || word.includes('e')
+    || word.includes('i')
+    || word.includes('o')
+    || word.includes('u')) {
+      return true
+    } 
+
+  console.log(vowels('eggs'))
+  }
+// expected output: true
+
 // Case of starting with consonant
 // remove all consonants before first vowel
 
@@ -43,7 +57,7 @@ const pigLatin = (word) => {
   // 'concat' "yay" to the end of word
 
   //Helpful methods could be "includes", "indexOf", "slice"
-}
+
 
 // the first function called in the program to get an input from the user
 // to run the function use the command: node main.js
