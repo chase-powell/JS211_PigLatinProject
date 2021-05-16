@@ -3,13 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>Pig Latin</h1>
+    <h2>Type a word you want translated then click the button and let the generator do its magic! </h2>
     <hr/>
-    <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
+    <div class="container">
+    <div id="display-element">
+      <input id="word" type="text">
+      <input id="return" type="text">
+    </div>
+  </div>
+    <button id = "button">Click Me</button>
     <hr/>
+  
   </body>
+  <script src="main.js"></script>
 </html>
