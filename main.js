@@ -10,6 +10,7 @@
 //   output: process.stdout
 // });
 
+// GUI Tues 5/18/21
 var generate = document.getElementById("word")
 var result = document.getElementById("return")
 document.getElementById("button").onclick = function(){
@@ -93,13 +94,6 @@ function pigLatin(word) {
 
 
 
-
-//GUI for Tues 5/18/21
-// let div = document.createElement('div');
-// let button = document.createElement('button');
-
-// doucument.body.appendChild(div);
-// document.body.appendChild(button);
 
 
 
